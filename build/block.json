@@ -1,0 +1,91 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "hero-section/hero-section",
+  "version": "0.1.0",
+  "title": "Hero Section",
+  "category": "design",
+  "icon": "smiley",
+  "description": "Manage Hero Section",
+  "example": {},
+  "supports": {
+    "background": {
+      "backgroundImage": true,
+      "backgroundSize": true
+    },
+    "color": {
+      "background": true,
+      "text": true,
+      "link": true
+    },
+    "html": true,
+    "typography": {
+      "fontSize": true
+    }
+  },
+  "textdomain": "hero-section",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "attributes": {
+    "url": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "img",
+      "attribute": "src",
+      "default": "https://tyler.com/wp-content/uploads/2023/11/Pine-Home-Hero-Sec-Image.jpeg"
+    },
+    "title": {
+      "type": "string",
+      "source": "html"
+    },
+    "size": {
+      "enum": [
+        "small",
+        "medium",
+        "large"
+      ]
+    },
+    "imageUrl": {
+      "type": "string",
+      "default": "https://tyler.com/wp-content/uploads/2023/11/Pine-Home-Hero-Sec-Image.jpeg"
+    },
+    "imageId": {
+      "type": "number",
+      "default": 2995
+    },
+    "heading": {
+      "type": "string",
+      "default": "Empowering Your Vision, Building Success"
+    },
+    "description": {
+      "type": "string",
+      "default": "BridgePoint Solutions is at the forefront of steering ventures to their potential and traversing challenges."
+    },
+    "buttonText": {
+      "type": "string",
+      "default": "Book Consultation"
+    },
+    "buttonUrl": {
+      "type": "string",
+      "default": "#"
+    },
+    "freeConsultationButtonText": {
+      "type": "string",
+      "default": "Explore Now"
+    },
+    "phoneNumberButtonText": {
+      "type": "string",
+      "default": "Explore Now"
+    },
+    "freeConsultationUrl": {
+      "type": "string",
+      "default": "#"
+    },
+    "phoneNumberUrl": {
+      "type": "string",
+      "default": "#"
+    }
+  }
+}

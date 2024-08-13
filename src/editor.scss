@@ -1,0 +1,88 @@
+.hero-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 640px; /* Matching the min-height from the provided structure */
+    margin-top: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-align: center;
+
+    .hero-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        background-color: rgba(0, 0, 0, 0.2); /* Dim effect similar to background dim ratio */
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 51%; /* Matching the focal point from the provided structure */
+            transition: transform 0.3s ease;
+        }
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 1;
+        color: #fff;
+        max-width: 800px;
+        padding: 20px; /* Add some padding to the content */
+
+        h1 {
+            font-family: 'DM Serif Display', serif;
+			font-size: 28px;
+			font-weight: 700;
+			font-size: 68px;
+			line-height: 94px;
+			color: #ffffff;
+			margin: 0 0 0;
+        }
+
+        p {
+			margin: 0 0 0;
+			font-size: 1.5rem;
+			line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: center; /* Align text to center */
+        }
+
+        .hero-button {
+			background: #2D1E42;
+			border-radius: 999px;
+			box-shadow: #2D1E42 0 10px 20px -10px;
+			box-sizing: border-box;
+			color: #FFFFFF;
+			cursor: pointer;
+			font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 24px;
+			opacity: 1;
+			outline: 0 solid transparent;
+			padding: 8px 18px;
+			user-select: none;
+			-webkit-user-select: none;
+			touch-action: manipulation;
+			width: fit-content;
+			word-break: break-word;
+			border: 3;
+			padding: 20px 50px 20px 50px;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero-button:hover {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+    }
+}
+.editor-styles-wrapper .wp-block {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
