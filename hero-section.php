@@ -36,9 +36,12 @@ function render_hero_section_block( $attributes ) {
         <div class="hero-content">
             <h1><?php echo $heading; ?></h1>
             <p><?php echo $description; ?></p>
-            <a href="<?php echo $button_url; ?>" class="hero-button"><?php echo $button_text; ?></a>
-			<a href="tel:0289993353" class="hero-button"> 02 8999 3353</a>
+			<div class="hero-button-wrapper">
+				<a href="<?php echo $button_url; ?>" class="hero-button"><?php echo $button_text; ?></a>
+				<a href="tel:0289993353" class="hero-button"> 02 8999 3353</a>
+			</div>
         </div>
+		<div class="hero-section__overlay"></div>
     </section>
     <?php
     return ob_get_clean();
